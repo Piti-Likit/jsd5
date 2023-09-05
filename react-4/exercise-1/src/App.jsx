@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 
 const App = () => {
   const [rate, setRate] = useState(0);
@@ -13,6 +13,8 @@ const App = () => {
     setExchange(newExchange);
   };
 
+  useEffect (syncRate, [])
+
   return (
     <div>
       <h1>Current Rate: {rate}</h1>
@@ -24,3 +26,4 @@ const App = () => {
 };
 
 export default App;
+
