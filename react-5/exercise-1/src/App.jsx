@@ -13,7 +13,7 @@ const App = () => {
       const response = await axios.get(`https://jsd5-mock-backend.onrender.com/members`);
       // set member here
       setMembers(response.data)
-    // const getData = async () => {    teacher's
+    // const getData = async () => {                                                       teacher's
     //   const response = await axios.get(
     //     "https://jsd5-mock-backend.onrender.com/members"
     //   );
@@ -37,7 +37,7 @@ const App = () => {
       `https://jsd5-mock-backend.onrender.com/members/${id}`
     );
     }
-    // if (response.status === 200 && response.data) {    Teacher's
+    // if (response.status === 200 && response.data) {                                       Teacher's
     //   // set data here
     //   const { data } = response;
     //   setSingleMember({ ...data });
